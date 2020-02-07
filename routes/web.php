@@ -16,6 +16,12 @@
 //    return 'mi vieja';
 // });
 
+
+Route::get('/actors/add', function(){
+    return view('actorsadd');
+});
+Route::post('/actors/add', 'ActorController@store');
+
 Route::get('/actores', 'ActorController@directory');
 
 
